@@ -1,0 +1,341 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	margin:0px;
+}
+
+ul.menu {
+    list-style: none;
+	float:right;
+	margin-right: 40px;
+}
+ul.menu li{
+	display:inline;
+	margin: 5px;
+	color: white;
+}
+a{
+	color:#1c75bf;
+}
+ul.menu li a{
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+}
+ul.menu li a:hover{
+	color:#1c75bf;
+	border-bottom:1px solid #1c75bf;
+	
+}
+header {
+    background: #00000000;
+	height: 50px;
+	position: fixed;
+	width:100%;
+	z-index:2;
+	padding: 0px 0px 30px 0px;
+}
+#ansLogo{
+	position: relative;
+    top: 10px;
+    left: 20px;
+	padding: 0px 40px 20px;
+}
+div#content {
+    position: absolute;
+	width:100%;
+}
+.small{
+	width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50vh;
+    z-index: 100;
+}
+
+section#slider img {
+    width: 98.72vw;
+    height: 100vh;
+}
+section#slider{
+  
+   transform:translateY(-50px);
+}
+img[src="assets/chevron-right-solid.svg"] {
+    float: right;
+    position: relative;
+}
+.hide{
+	display:none !important;
+}
+.imageText{
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	transform:translate(-50%,-50%);
+}
+.imageText h1,.imageText h4,.imageText p{
+	color: white;
+	text-align: center;
+}
+.imageText a ,#button{
+    background: #2626cc;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+#about_content{
+    display: inline;
+    float: left;
+    width: 42%;
+    padding: 0px 25px 0px 55px;
+}
+#about_pic{
+    display: inline;
+    float: right;
+   
+    padding: 0px 55px;
+}
+#About{
+	display: flow-root;
+	
+}
+
+#About h1{
+	padding-left:55px
+}
+#about_pic_per{
+    height: 450px;
+    width: 550px;
+	padding: 10px;
+    border: 10px solid #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.51);
+}
+.feature_content,.founding_members_content,.tech_team_content{
+    width: 29.8%;
+    padding: 20px;
+    display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+#features,#founding_members,#tech_team,#marketing_team,#careers,#clients{
+	display: flow-root;
+	padding: 55px;
+    background: #edecec;
+	position: relative;
+}
+#founding_members,#marketing_team,#clients{
+	background:white;
+}
+#features h1,#founding_members h1,#tech_team h1,#marketing_team h1,#careers h1,#facts h1,#facts h3,#clients h1,#clients h3,#contact h1 ,#contact h3{
+	text-align:center;
+}
+.founding_members_content img,.tech_team_content img {
+    border-radius: 50%;
+    width: 250px;
+	height: 250px;
+}
+.smallIcon{
+	width: 50px;
+    height: 50px;
+	background: #ecedea;
+}
+.tech_team_content img {
+	padding:2px;
+	border: 1px solid #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+}
+.detail{
+    transform: translateY(-400px);
+    text-align: center;
+    background: #7973738f;
+    opacity: 0;
+    height: 300px;
+    padding: 20px;
+    position: absolute;
+    width: 24.3%;
+}
+.detail p{
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	color:white;
+}
+.detail:hover{
+	opacity:0.8;
+}
+.smallIcon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+	top: 42%;
+}
+#right-chev-tech {
+    position: absolute;
+    right: 70px;
+}
+#left-chev-tech{
+	position: absolute;
+}
+.parallax {
+    background-image: url(assets/bg.jpg);
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+}
+#careers table,#facts table{
+	padding: 55px;
+    width: 100%;
+}
+div#facts,#contact ,#contacts{
+    text-align: center;
+    color: white;
+    padding-top: 55px;
+	
+}
+#contact{
+	height:1000px;
+	
+}
+#facts table tr:nth-child(1) ,#facts table tr:nth-child(3){
+	font-weight:bold;
+	font-size:20px;
+}
+div#form_div {
+     display: inline-block;
+    float: left;
+    width: 45%;
+    
+}
+div#contact_info {
+    display: inline-block;
+    
+}
+div#contact_div {
+    text-align: left;
+    padding: 55px;
+    display: flow-root;
+    width: 90vw;
+}
+#form_div input, #form_div select {
+    width: 90%;
+    height: 25px;
+    border: 1px solid #f9f9fb;
+    background: #23181840;
+}
+div#contact_info ul {
+    list-style-type: none;
+    padding: 5px;
+}
+footer{
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+div#scrollTop {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    background: #1c75bf;
+    z-index: 900;
+}
+div#scrollTop {
+    position: fixed;
+    bottom: 50px;
+    right: -80px;
+    width: 30px;
+    height: 30px;
+    background: #1c75bf;
+    z-index: 900;
+    border-radius: 5px;
+}
+#scrollTop img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+div#facts{
+	width:100%;
+}
+
+.imageText h1{
+  animation-duration: 3s;
+  animation-name: slideFromLeft;
+  width:100% ;
+}
+.imageText h4{
+  animation-duration: 3s;
+  animation-name: slideFromRight;
+  width:100% ;
+}
+.imageText p{
+  animation-duration: 3s;
+  animation-name: slideFromLeft;
+  width:100% ;
+}
+
+@keyframes slideFromLeft {
+  from {
+    margin-left: -20%;
+   opacity: 0.4;
+  }
+
+  to {
+    margin-left: 0%;
+   opacity:1;
+  }
+}
+@keyframes slideFromRight {
+  from {
+    margin-left: 20%; 
+	opacity: 0.4;	
+  }
+
+  to {
+    margin-left: 0%;
+	opacity:1;
+   
+  }
+}
+#slider img{
+	animation-duration: 3s;
+  animation-name: opacity;
+  
+}
+@keyframes opacity {
+  from {
+   
+   opacity: 0.8;
+  }
+
+  to {
+  
+   opacity:1;
+  }
+}
